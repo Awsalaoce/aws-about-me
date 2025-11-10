@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aws Ahmed — About Me</title>
+  <style>
+    :root { --bg:#0f1220; --card:#171a2b; --text:#e8eaf6; --muted:#b8bfd9; --accent:#6ea8ff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    header { padding: 56px 20px 24px; text-align: center; }
+    header h1 { margin: 0 0 6px; font-size: 2.2rem; letter-spacing: 0.5px; }
+    header p { margin: 0; color: var(--muted); }
+    main { max-width: 900px; margin: 20px auto 80px; padding: 0 20px; display: grid; gap: 20px; }
+    .card { background: var(--card); border: 1px solid #222640; border-radius: 14px; padding: 20px; }
+    .row { display: grid; grid-template-columns: 1fr; gap: 20px; }
+    @media (min-width: 800px) { .row { grid-template-columns: 1.2fr 1fr; } }
+    h2 { margin: 0 0 10px; font-size: 1.3rem; }
+    .tag { display:inline-block; padding: 6px 10px; border:1px solid #2a3052; border-radius:999px; margin:4px 6px 0 0; color: var(--muted); font-size: 0.9rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer { text-align:center; color: var(--muted); padding: 30px 10px 60px; font-size: 0.95rem; }
+    .avatar { width: 100%; aspect-ratio: 1/1; border-radius: 12px; object-fit: cover; background: #0a0c15; border: 1px solid #212640; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aws Ahmed</h1>
+    <p>Aspiring Frontend Developer · Curious problem‑solver · Based in Sweden</p>
+  </header>
+
+  <main>
+    <section class="row">
+      <div class="card">
+        <h2>About me</h2>
+        <p>
+          Hi! I'm Aws. I'm currently studying <strong>Programming 1 (Python)</strong> and
+          <strong>Web Development 1</strong> while building small projects in HTML, CSS, and JavaScript.
+          I enjoy turning ideas into clean, accessible, and responsive interfaces.
+        </p>
+        <p>
+          My focus areas right now are semantic HTML, modern CSS layout (Flexbox &amp; Grid),
+          and practical JavaScript for interactivity.
+        </p>
+      </div>
+      <aside class="card">
+        <img class="avatar" src="profile_photo.jpeg" alt="Aws Ahmed profile photo" />
+      </aside>
+    </section>
+
+    <section class="card">
+      <h2>Skills</h2>
+      <div>
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3 / Flexbox / Grid</span>
+        <span class="tag">JavaScript (basics)</span>
+        <span class="tag">Python (intro)</span>
+        <span class="tag">Responsive Design</span>
+        <span class="tag">VS Code</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li>Landing page: simple responsive layout using Grid and clamp() for fluid type.</li>
+        <li>Interactive color palette picker with localStorage.</li>
+        <li>Small Python scripts for practice (loops, functions, CSV parsing).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Find me online</h2>
+      <p>
+        • Facebook: <a href="https://www.facebook.com/share/1DFmmphT6w/?mibextid=wwXIfr" target="_blank" rel="noopener">Visit my shared post</a><br />
+        • Email: <a href="mailto:Aws.alaoc@outlook.com">Aws.alaoc@outlook.com</a><br />
+        • Phone: <a href="tel:+46762082816">0762082816</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="y"></span> Aws Ahmed — Built with HTML &amp; CSS
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
